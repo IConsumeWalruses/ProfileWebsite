@@ -1,0 +1,130 @@
+#wrapper {
+    display: grid;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "nestedgrid nestedgrid"
+                         "main imgframe"
+                         "footer footer"
+}
+body {
+    background-color: azure;
+}
+#header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(193, 205, 247);
+}
+#footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(193, 205, 247);
+}
+#nav {
+    grid-area: nav;
+    background-color: cornflowerblue;
+}
+#main {
+    grid-area: main;
+    padding: 50px;
+}
+#nestedgrid {
+    grid-area: nestedgrid;
+    display: grid;
+    grid-template-areas: "home about awards culture contact";
+    border: 0px solid black;
+    grid-gap: 10px;
+    padding: 20px;
+}
+#home {
+    grid-area: home;
+    text-align: center;
+    color: darkslategray;
+}
+#about {
+    grid-area: about;
+    text-align: center;
+    color: darkslategray;
+}
+#awards {
+    grid-area: awards;
+    text-align: center;
+    color: darkslategray;
+}
+#culture {
+    grid-area: culture;
+    text-align: center;
+    color: darkslategray;
+}
+#contact {
+    grid-area: contact;
+    text-align: center;
+    color: darkslategray;
+}
+.button {
+  background-color: rgb(193, 205, 247);
+  border: none;
+  color: darkslategray;
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+}
+#imgframe {
+    grid-area: imgframe;
+    padding: 80px;
+}
+#homebutton {
+  background-color:  rgb(193, 205, 247);
+  border: none;
+  color: darkslategray;
+  padding: 20px 80px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+}
+#aboutbutton {
+  background-color: rgb(193, 205, 247);
+  border: none;
+  color: darkslategray;
+  padding: 20px 80px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+}
+#awardsbutton {
+  background-color: rgb(193, 205, 247);
+  border: none;
+  color: darkslategray;
+  padding: 20px 80px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+}
+#culturebutton {
+  background-color: lightcyan;
+  border: none;
+  color: darkslategray;
+  padding: 20px 80px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+}
+#contactbutton {
+  background-color: rgb(193, 205, 247);
+  border: none;
+  color: darkslategray;
+  padding: 20px 70px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+}
+h2 {
+    text-decoration: underline;
+}
+
